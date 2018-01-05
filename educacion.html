@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Felipe Moctezuma">
+  <meta name="description" content="Hoja de vida digital">
+  <meta name="viewport" content="width=device-width, user-scalable:no">
+  <meta name="keywords" content="NextU,PrimerProyecto,HTML">
+  <title>Hoja de vida digital | Felipe Moctezuma</title>
+  <style type="text/css">
+   header table{margin: 0 auto;width: 80%}
+   header table tr td{width: 33.3%; text-align: center}
+   article, footer{padding: 0 50px;}
+   article section:first-of-type table{margin: 0 auto;width: 100%;text-align: center;}
+  </style>
+</head>
+
+<body>
+  <header>
+    <table width="100%">
+      <tr>
+        <td>
+          <div id="logo">
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="50" fill="#777"/>
+              <g>
+                <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_1" y="60" x="50" stroke-width="0" stroke="#fff" fill="#fff">FM</text>
+              </g>
+            </svg>
+          </div>
+        </td>
+        <td>
+          <div id="titulo">
+            <center>
+              <h1>Hoja de vida</h1>
+              <h3><center>Felipe Moctezuma</center></h3>
+            </center>
+          </div>
+        </td>
+        <td>
+          <nav id="menu">
+            <a href="index.html">Inicio</a> |
+            <a href="educacion.html">Educación</a> |
+            <a href="experiencia.html">Experiencia</a>
+          </nav>
+        </td>
+      </tr>
+    </table>
+    <hr/>
+  </header>
+  <article>
+    <h2>Educación</h2>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culminó?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2007</td>
+            <td>Universidad ICESI</td>
+            <td>Cali, Colombia</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>Universidad San Martin</td>
+            <td>Cali, Colombia</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>Universidad UNICATOLICA</td>
+            <td>Cali, Colombia</td>
+            <td>En estudio</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr/>
+    <section>
+      <h2>Agregar Estudios</h2>
+      <form method="post" target="_self">
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="anno"><b>Año:</b> </label></td>
+              <td> <select name="anno" id="anno" required>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017" selected>2017</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td><label for="institucion"><b>Institucion:</b> </label></td>
+              <td><input type="text" name="institucion" id="institucion" required/></td>
+            </tr>
+            <tr>
+              <td><label for="lugar"><b>Lugar:</b></label></td>
+              <td><textarea name="lugar" id="lugar" cols="30" rows="2"></textarea></td>
+            </tr>
+            <tr>
+              <td><label for="culmino"><b>¿Culminó?</b></label></td>
+              <td>
+                <input type="radio" name="culmino" value="Si" checked>Si</input>
+                <input type="radio" name="culmino" value="No">No</input>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit" name="button">Enviar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+  </article>
+  <footer>
+    <h3>Contacto</h3>
+    <ul>
+      <li><span><b>Correo: </b><a href="mailto:luisfe.moctezuma@gmail.com">luisfe.moctezuma@gmail.com</a></span></li>
+      <li><span><b>Github: </b><a href="https://github.com/femoru">github.com/femoru</a></span></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
